@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiHeart } from 'react-icons/ci'
-import { FaChevronDown } from 'react-icons/fa6'
+import { FaBarsStaggered, FaChevronDown } from 'react-icons/fa6'
 import { MdMessage } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ function Header() {
             </Link>
              
           </div>
-         <div className="flex justify-center gap-7 items-center">
+         <div className="hidden md:flex lg:flex justify-center gap-7 items-center">
          <div className="flex justify-center items-center capitalize text-red-600 font-semibold">
                 <h2 className=' whitespace-nowrap'>shop travel</h2>
                 <FaChevronDown/>
@@ -43,6 +43,8 @@ function Header() {
                 </Link>
             </div>
          </div>
+         <FaBarsStaggered className='block lg:hidden text-3xl active:scale-110 hover:opacity-70 cursor-pointer'/>
+
         </div>
         </header>
   )
