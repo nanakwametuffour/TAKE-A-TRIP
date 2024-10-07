@@ -8,6 +8,7 @@ import Card7 from "./Card7";
 import Card1 from "./Card1";
 import Card2 from "./Card2";
 import Card3 from "./Card3";
+import { TbRubberStamp } from "react-icons/tb";
 export default function Slide2() {
   const responsive = {
     desktop: {
@@ -44,6 +45,7 @@ export default function Slide2() {
             arrows={false}
             autoPlay={true}
             autoPlaySpeed={5000}
+            draggable={true}
           >
             <div className="px-2 w-full">
               <Card1 />

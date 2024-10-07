@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Card1 from './Card1';
 export default function Slide1() {
   const responsive = {
     desktop: {
@@ -22,23 +23,28 @@ export default function Slide1() {
   return (
    <div className="bg-[url('/public/images/brands/resort5.jpg')] overflow-hidden rounded-xl my-7 bg-center bg-cover bg-no-repeat w-full object-cover h-96">
        <div className="w-full bg-black/65 flex py-10 flex-col h-full px-10">
-        <div className=" w-full">
+        <div className=" w-full my-2">
           <h1 className="text-white text-2xl font-semibold">
             Perfect Somewheres 2024
           </h1>
         </div>
-        <div className="w-full items-center flex h-full">
+        <div className="w-full">
            <Carousel responsive={responsive}
              infinite={true}
               centerMode={true}
+              arrows={false}
+              draggable={true}
            >
-           <div>Item 1</div>
-            <div>Item 2</div>
-            <div>Item 3</div>
-            <div>Item 4</div>
-            <div>Item 5</div>
-            <div>Item 6</div>
-            <div>Item 7</div>
+                <div className="px-2 w-full">
+              <Card1 />
+            </div>
+            <div className="px-2 w-full">
+              <Card1 />
+            </div>
+            <div className="px-2 w-full">
+              <Card1 />
+            </div>
+          
            </Carousel>
         </div>
       </div>
