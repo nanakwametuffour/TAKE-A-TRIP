@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <header className='bg-white shadow-md sticky top-0 z-30'>
+    <header className='bg-white shadow-md sticky top-0 z-[200]'>
         <div className="max-w-6xl w-full mx-auto flex justify-between items-center px-5 py-3">
           <div className="flex items-center gap-4">
             <Link to={'/'}>
@@ -43,7 +43,7 @@ function Header() {
                 </Link>
             </div>
          </div>
-         <FaBarsStaggered className='block lg:hidden text-3xl active:scale-110 hover:opacity-70 cursor-pointer'/>
+         <FaBarsStaggered className='block  lg:hidden text-3xl active:scale-110 hover:opacity-70 cursor-pointer'/>
 
         </div>
         </header>
