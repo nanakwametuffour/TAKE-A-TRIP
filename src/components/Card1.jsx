@@ -33,7 +33,7 @@ function Card1() {
         >
           {property?.map((item) => (
              <div key={item.id} className="flex w-full flex-col rounded-lg overflow-hidden h-full">
-                <div className="w-full h-auto">
+                <div className="w-[400px] h-auto">
                     <img src={item.image} alt={item.name} className="w-full h-[150px] object-cover" />
                 </div>
                 <div className="flex my-5 flex-col">

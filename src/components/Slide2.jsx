@@ -36,18 +36,24 @@ export default function Slide2() {
           <p className="text-gray-300">Showing deals for:Oct 18 - Oct 20</p>
         </div>
         <div className="w-full">
-          <Carousel className="p-4" responsive={responsive} infinite={true} centerMode={true}>
+          <Carousel
+            className="p-4"
+            responsive={responsive}
+            infinite={true}
+            centerMode={true}
+            arrows={false}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+          >
             <div className="px-2 w-full">
-              <Card1/>
+              <Card1 />
             </div>
             <div className="px-2 w-full">
-              <Card1/>
+              <Card1 />
             </div>
             <div className="px-2 w-full">
-              <Card1/>
+              <Card1 />
             </div>
-            
-            
           </Carousel>
         </div>
       </div>
