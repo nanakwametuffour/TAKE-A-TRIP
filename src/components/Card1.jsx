@@ -2,7 +2,7 @@ import React from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { property } from "../../public/images/propertyData";
+import { property1 } from "../../public/images/propertyData";
 
 function Card1() {
   const responsive = {
@@ -23,34 +23,37 @@ function Card1() {
     },
   };
   return (
+    <div className="">
+     
     <div className="w-full h-auto mb-14">
-      <div className="w-full h-auto">
-        <Carousel
-          responsive={responsive}
+       
+      <div className="w-full">
+        <Carousel responsive={responsive} className="w-full"
           infinite={true}
-          arrows={true}
-          draggable={true}
         >
-          {property?.map((item) => (
-             <div key={item.id} className="flex w-full flex-col rounded-lg overflow-hidden h-full">
-                <div className="w-[400px] h-auto">
-                    <img src={item.image} alt={item.name} className="w-full h-[150px] object-cover" />
-                </div>
-                <div className="flex my-5 flex-col">
-                    <h1 className="text-white">{item.name}</h1>
-                     <span className="text-yellow-50">{item.location}</span>
-                     <div className="flex gap-2">
-
-                     <span className="text-yellow-50">{item.number_of_bathrooms} bath</span>
-                     <span className="text-yellow-50">{item.number_of_beds}beds</span>
-                     </div>
-                     <span className="text-white">${item.price} / Night</span>
-                     
-                </div>
-             </div>
+          {property1?.map((item) => (
+            <div className="">
+              <div className="w-full rounded-lg overflow-hidden">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="w-full object-cover h-[200px]"
+                />
+              </div>
+              <div className="flex flex-col gap-2 my-3">
+                <h1 className="text-yellow-50 text-2xl">{item.name}</h1>
+                <p className="text-[#f1f1f1]">{item.location}</p>
+                 <div className="flex gap-2 text-gray-200">
+                  <span>{item.number_of_beds}beds</span>
+                  <span>{item.number_of_bathrooms} baths</span>
+                 </div>
+                <span className="text-gray-100 font-semibold">{item.price} / Night</span>
+              </div>
+            </div>
           ))}
         </Carousel>
       </div>
+    </div>
     </div>
   );
 }

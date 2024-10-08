@@ -891,3 +891,82 @@ export const faqs = [
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto nisi, molestias ipsam dolorum laudantium corrupti optio cupiditate libero odit cum, labore ab sint officiis reiciendis quisquam perferendis, facilis facere iste inventore architecto blanditiis suscipit. Voluptatibus.",
   },
 ];
+
+
+export const property1 =[
+  {
+    id: 1,
+    name: "Villa on washingt on avenue",
+    location: "Oregon, Homeland Street, plot 345",
+    price: "450,000",
+    distance: "1.2km",
+    purpose: "sale",
+    number_of_beds: 3,
+    number_of_bathrooms: 2,
+    contact: "+256 775 358738",
+    dimensions: "3000 sq ft",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero beatae sit voluptas dolorum vel eligendi consectetur alias in veniam nostrum reiciendis cum labore fugiat ut ipsum quidem earum eaque voluptatem enim possimus, est, saepe explicabo. Reiciendis veritatis maiores dolore quidem doloremque obcaecati quis commodi dolorum. Corporis ad provident officia aut iusto ea, voluptatibus architecto debitis pariatur qui! Nisi esse voluptas veniam, quia provident rerum iure quis quasi, odio quos dolores obcaecati nam nostrum nesciunt ipsum similique recusandae? Neque, animi? Voluptates facere rerum labore eos nulla! Ut, nesciunt facere fugit optio quaerat neque id fuga necessitatibus, pariatur eius tenetur? Esse ipsa numquam distinctio vero reprehenderit, libero architecto itaque, optio quibusdam cupiditate cum, deleniti ad. Sapiente, placeat voluptates a recusandae voluptatum cupiditate nulla vel ut. Eveniet eum obcaecati illo saepe, recusandae natus incidunt quas molestias maxime vel? Possimus perspiciatis, repellat maxime molestias quos perferendis! Impedit consectetur natus alias laudantium sunt ipsam nostrum! Eius quasi officiis, labore sunt itaque porro laudantium, suscipit ipsa dicta magni quibusdam totam? Exercitationem doloribus, debitis, eligendi facere odio a nesciunt nam suscipit quia ullam sequi, illum repudiandae! Hic nobis inventore maxime. Explicabo quod inventore excepturi adipisci provident quidem ab doloremque amet nostrum, ullam fugiat debitis eius aspernatur atque.",
+    image: "/images/property (25).jpg",
+  },
+  {
+    id: 2,
+    name: "Awesome family home",
+    location: "Oregon, Homeland Street, plot 345",
+    price: "450,000",
+    distance: "1.2km",
+    purpose: "sale",
+    number_of_beds: 3,
+    number_of_bathrooms: 2,
+    contact: "+256 775 358738",
+    dimensions: "3000 sq ft",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero beatae sit voluptas dolorum vel eligendi consectetur alias in veniam nostrum reiciendis cum labore fugiat ut ipsum quidem earum eaque voluptatem enim possimus, est, saepe explicabo. Reiciendis veritatis maiores dolore quidem doloremque obcaecati quis commodi dolorum. Corporis ad provident officia aut iusto ea, voluptatibus architecto debitis pariatur qui! Nisi esse voluptas veniam, quia provident rerum iure quis quasi, odio quos dolores obcaecati nam nostrum nesciunt ipsum similique recusandae? Neque, animi? Voluptates facere rerum labore eos nulla! Ut, nesciunt facere fugit optio quaerat neque id fuga necessitatibus, pariatur eius tenetur? Esse ipsa numquam distinctio vero reprehenderit, libero architecto itaque, optio quibusdam cupiditate cum, deleniti ad. Sapiente, placeat voluptates a recusandae voluptatum cupiditate nulla vel ut. Eveniet eum obcaecati illo saepe, recusandae natus incidunt quas molestias maxime vel? Possimus perspiciatis, repellat maxime molestias quos perferendis! Impedit consectetur natus alias laudantium sunt ipsam nostrum! Eius quasi officiis, labore sunt itaque porro laudantium, suscipit ipsa dicta magni quibusdam totam? Exercitationem doloribus, debitis, eligendi facere odio a nesciunt nam suscipit quia ullam sequi, illum repudiandae! Hic nobis inventore maxime. Explicabo quod inventore excepturi adipisci provident quidem ab doloremque amet nostrum, ullam fugiat debitis eius aspernatur atque.",
+    image: "/images/property (26).jpg",
+  },
+  {
+    id: 3,
+    name: "Agile real estate group",
+    location: "Oregon, Homeland Street, plot 345",
+    price: "450,000",
+    distance: "1.2km",
+    purpose: "rent",
+    number_of_beds: 3,
+    number_of_bathrooms: 2,
+    contact: "+256 775 358738",
+    dimensions: "3000 sq ft",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero beatae sit voluptas dolorum vel eligendi consectetur alias in veniam nostrum reiciendis cum labore fugiat ut ipsum quidem earum eaque voluptatem enim possimus, est, saepe explicabo. Reiciendis veritatis maiores dolore quidem doloremque obcaecati quis commodi dolorum. Corporis ad provident officia aut iusto ea, voluptatibus architecto debitis pariatur qui! Nisi esse voluptas veniam, quia provident rerum iure quis quasi, odio quos dolores obcaecati nam nostrum nesciunt ipsum similique recusandae? Neque, animi? Voluptates facere rerum labore eos nulla! Ut, nesciunt facere fugit optio quaerat neque id fuga necessitatibus, pariatur eius tenetur? Esse ipsa numquam distinctio vero reprehenderit, libero architecto itaque, optio quibusdam cupiditate cum, deleniti ad. Sapiente, placeat voluptates a recusandae voluptatum cupiditate nulla vel ut. Eveniet eum obcaecati illo saepe, recusandae natus incidunt quas molestias maxime vel? Possimus perspiciatis, repellat maxime molestias quos perferendis! Impedit consectetur natus alias laudantium sunt ipsam nostrum! Eius quasi officiis, labore sunt itaque porro laudantium, suscipit ipsa dicta magni quibusdam totam? Exercitationem doloribus, debitis, eligendi facere odio a nesciunt nam suscipit quia ullam sequi, illum repudiandae! Hic nobis inventore maxime. Explicabo quod inventore excepturi adipisci provident quidem ab doloremque amet nostrum, ullam fugiat debitis eius aspernatur atque.",
+    image: "/images/property (27).jpg",
+  },
+  {
+    id: 4,
+    name: "comfort property advisor",
+    location: "Oregon, Homeland Street, plot 345",
+    price: "450,000",
+    distance: "1.2km",
+    purpose: "sale",
+    number_of_beds: 3,
+    number_of_bathrooms: 2,
+    contact: "+256 775 358738",
+    dimensions: "3000 sq ft",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero beatae sit voluptas dolorum vel eligendi consectetur alias in veniam nostrum reiciendis cum labore fugiat ut ipsum quidem earum eaque voluptatem enim possimus, est, saepe explicabo. Reiciendis veritatis maiores dolore quidem doloremque obcaecati quis commodi dolorum. Corporis ad provident officia aut iusto ea, voluptatibus architecto debitis pariatur qui! Nisi esse voluptas veniam, quia provident rerum iure quis quasi, odio quos dolores obcaecati nam nostrum nesciunt ipsum similique recusandae? Neque, animi? Voluptates facere rerum labore eos nulla! Ut, nesciunt facere fugit optio quaerat neque id fuga necessitatibus, pariatur eius tenetur? Esse ipsa numquam distinctio vero reprehenderit, libero architecto itaque, optio quibusdam cupiditate cum, deleniti ad. Sapiente, placeat voluptates a recusandae voluptatum cupiditate nulla vel ut. Eveniet eum obcaecati illo saepe, recusandae natus incidunt quas molestias maxime vel? Possimus perspiciatis, repellat maxime molestias quos perferendis! Impedit consectetur natus alias laudantium sunt ipsam nostrum! Eius quasi officiis, labore sunt itaque porro laudantium, suscipit ipsa dicta magni quibusdam totam? Exercitationem doloribus, debitis, eligendi facere odio a nesciunt nam suscipit quia ullam sequi, illum repudiandae! Hic nobis inventore maxime. Explicabo quod inventore excepturi adipisci provident quidem ab doloremque amet nostrum, ullam fugiat debitis eius aspernatur atque.",
+    image: "/images/property (28).jpg",
+  },
+  {
+    id: 5,
+    name: "freedom properties, LLC",
+    location: "Oregon, Homeland Street, plot 345",
+    price: "450,000",
+    distance: "1.2km",
+    purpose: "rent",
+    number_of_beds: 3,
+    number_of_bathrooms: 2,
+    contact: "+256 775 358738",
+    dimensions: "3000 sq ft",
+    description:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero beatae sit voluptas dolorum vel eligendi consectetur alias in veniam nostrum reiciendis cum labore fugiat ut ipsum quidem earum eaque voluptatem enim possimus, est, saepe explicabo. Reiciendis veritatis maiores dolore quidem doloremque obcaecati quis commodi dolorum. Corporis ad provident officia aut iusto ea, voluptatibus architecto debitis pariatur qui! Nisi esse voluptas veniam, quia provident rerum iure quis quasi, odio quos dolores obcaecati nam nostrum nesciunt ipsum similique recusandae? Neque, animi? Voluptates facere rerum labore eos nulla! Ut, nesciunt facere fugit optio quaerat neque id fuga necessitatibus, pariatur eius tenetur? Esse ipsa numquam distinctio vero reprehenderit, libero architecto itaque, optio quibusdam cupiditate cum, deleniti ad. Sapiente, placeat voluptates a recusandae voluptatum cupiditate nulla vel ut. Eveniet eum obcaecati illo saepe, recusandae natus incidunt quas molestias maxime vel? Possimus perspiciatis, repellat maxime molestias quos perferendis! Impedit consectetur natus alias laudantium sunt ipsam nostrum! Eius quasi officiis, labore sunt itaque porro laudantium, suscipit ipsa dicta magni quibusdam totam? Exercitationem doloribus, debitis, eligendi facere odio a nesciunt nam suscipit quia ullam sequi, illum repudiandae! Hic nobis inventore maxime. Explicabo quod inventore excepturi adipisci provident quidem ab doloremque amet nostrum, ullam fugiat debitis eius aspernatur atque.",
+    image: "/images/property (29).jpg",
+  },
+]

@@ -9,6 +9,8 @@ import Card1 from "./Card1";
 import Card2 from "./Card2";
 import Card3 from "./Card3";
 import { TbRubberStamp } from "react-icons/tb";
+import CustomRightArrow from "./CustomRightArrow";
+import CustomLeftArrow from "./CustomLeftArrow";
 export default function Slide2() {
   const responsive = {
     desktop: {
@@ -28,36 +30,34 @@ export default function Slide2() {
     },
   };
   return (
-    <div className="bg-[url('/public/images/brands/resort4.jpg')] overflow-hidden rounded-xl my-7 bg-center bg-cover bg-no-repeat w-full object-cover h-auto">
-      <div className="w-full bg-black/65 flex py-10 flex-col h-full px-1 md:px-2 lg:px-10">
-        <div className=" w-full">
-          <h1 className="text-white text-2xl font-semibold">
-            Last-minute weekend deals
-          </h1>
-          <p className="text-gray-300">Showing deals for:Oct 18 - Oct 20</p>
-        </div>
-        <div className="w-full">
-          <Carousel
-            className="p-4"
-            responsive={responsive}
-            infinite={true}
-            centerMode={true}
-            arrows={false}
-            autoPlay={true}
-            autoPlaySpeed={5000}
-            draggable={true}
-          >
-            <div className="px-2 w-full">
-              <Card1 />
-            </div>
-            <div className="px-2 w-full">
-              <Card1 />
-            </div>
-            <div className="px-2 w-full">
-              <Card1 />
-            </div>
-          </Carousel>
-        </div>
+    <div className="bg-[url('/public/images/brands/hotelwall1.jpg')] brightness-100 overflow-hidden rounded-xl my-7 bg-center bg-cover bg-no-repeat w-full object-cover h-auto">
+         
+      <div className="w-full bg-black/60 flex py-10 flex-col h-full px-1 md:px-2 lg:px-10 ">
+      <div className="flex flex-col my-3">
+         <h1 className="text-[#f1f1f1] text-2xl font-semibold">Top deals for a last minute getaway
+          
+         </h1>
+         <span className="text-gray-300 font-semibold">Showing deals for:Oct 9 - Oct 11</span>
+       </div>
+        <Carousel responsive={responsive}
+           customRightArrow={<CustomRightArrow/>}
+           infinite={true}
+           customLeftArrow={<CustomLeftArrow/>}
+         className=" -z-0"
+         >
+          <div className="px-2">
+            <Card1 />
+          </div>
+          <div className="px-2">
+            <Card1 />
+          </div>
+          <div className="px-2">
+            <Card1 />
+          </div>
+          <div className="px-2">
+            <Card1 />
+          </div>
+        </Carousel>
       </div>
     </div>
   );

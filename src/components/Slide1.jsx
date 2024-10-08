@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Card1 from './Card1';
+import Card1 from "./Card1";
+import CustomRightArrow from "./CustomRightArrow";
+import CustomLeftArrow from "./CustomLeftArrow";
 export default function Slide1() {
   const responsive = {
     desktop: {
@@ -21,39 +23,34 @@ export default function Slide1() {
     },
   };
   return (
-    <div className="bg-[url('/public/images/brands/resort4.jpg')] overflow-hidden rounded-xl my-7 bg-center bg-cover bg-no-repeat w-full object-cover h-auto">
-    <div className="w-full bg-black/65 flex py-10 flex-col h-full px-1 md:px-2 lg:px-10">
-      <div className=" w-full">
-        <h1 className="text-white text-2xl font-semibold">
-        Perfect Somewheres 2024
-
-        </h1>
-       
-      </div>
-      <div className="w-full">
+    <div className="bg-[url('/public/images/brands/hotelwall12.jpg')] overflow-hidden rounded-xl my-7 bg-center bg-cover bg-no-repeat w-full object-cover h-auto">
+      <div className="w-full bg-black/60 flex py-10 flex-col h-full px-1 md:px-2 lg:px-10 ">
+        <div className="flex flex-col my-3">
+          <h1 className="text-[#f1f1f1] text-2xl font-semibold">
+            Perfect Somewheres 2024
+          </h1>
+        </div>
         <Carousel
-          className="p-4"
           responsive={responsive}
+          customRightArrow={<CustomRightArrow />}
           infinite={true}
-          centerMode={true}
-          arrows={false}
-          autoPlay={true}
-          autoPlaySpeed={50000}
-          draggable={true}
+          customLeftArrow={<CustomLeftArrow />}
+          className=" -z-0"
         >
-          <div className="px-2 w-full">
+          <div className="px-2">
             <Card1 />
           </div>
-          <div className="px-2 w-full">
+          <div className="px-2">
             <Card1 />
           </div>
-          <div className="px-2 w-full">
+          <div className="px-2">
+            <Card1 />
+          </div>
+          <div className="px-2">
             <Card1 />
           </div>
         </Carousel>
       </div>
     </div>
-  </div>
-  )
+  );
 }
-
