@@ -4,11 +4,14 @@ import "react-multi-carousel/lib/styles.css";
 import Card1 from "./Card1";
 import CustomRightArrow from "./CustomRightArrow";
 import CustomLeftArrow from "./CustomLeftArrow";
+import Card2 from "./Card2";
+import Card3 from "./Card3";
+import Card4 from "./Card4";
 export default function Slide1() {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 4,
       slidesToSlide: 3, // optional, default to 1.
     },
     tablet: {
@@ -37,17 +40,18 @@ export default function Slide1() {
           customLeftArrow={<CustomLeftArrow />}
           className=" -z-0"
         >
-          <div className="px-2">
+           <div className="px-2">
             <Card1 />
+          
           </div>
           <div className="px-2">
-            <Card1 />
+            <Card2/>
           </div>
           <div className="px-2">
-            <Card1 />
+            <Card3/>
           </div>
           <div className="px-2">
-            <Card1 />
+            <Card4/>
           </div>
         </Carousel>
       </div>
