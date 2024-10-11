@@ -1,53 +1,58 @@
-import React from 'react'
-import { CiHeart } from 'react-icons/ci'
-import { FaBarsStaggered, FaChevronDown } from 'react-icons/fa6'
-import { MdMessage } from 'react-icons/md'
-import { Link } from 'react-router-dom'
+import { Button, Navbar, NavbarToggle } from "flowbite-react";
+import React from "react";
+import { CiHeart } from "react-icons/ci";
+import { FaMoon } from "react-icons/fa";
+import { MdMessage } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
 
-function Header() {
+export default function Header() {
+  const location = useLocation().pathname;
   return (
-    <header className='bg-white shadow-md sticky top-0 z-[200]'>
-        <div className="max-w-6xl w-full mx-auto flex justify-between items-center px-5 py-3">
-          <div className="flex items-center gap-4">
-            <Link to={'/'}>
-            <div className="flex items-center justify-center w-full">
-
-            <h1 className='font-semibold text-3xl'>Trip.</h1>
-            <span className='mt-3 text-red-600'>com</span>
-            </div>
-            </Link>
-             
-          </div>
-         <div className="hidden md:flex lg:flex justify-center gap-7 items-center">
-         <div className="flex justify-center items-center capitalize text-red-600 font-semibold">
-                <h2 className=' whitespace-nowrap'>shop travel</h2>
-                <FaChevronDown/>
-             </div>
-            <div className="flex w-full justify-center items-center gap-5 text-1xl capitalize text-red-600 font-semibold">
-                <Link to={'/list-property'}>
-                 <span>List your property</span>
-                </Link>
-                <Link to={'/support'}>
-                 <span>support</span>
-                </Link>
-                <Link to={'/trip'}>
-                 <span className='flex items-center justify-center'>trips
-                 <CiHeart className='text-2xl'/>
-
-                 </span>
-                </Link>
-                <Link to={'/message'}>
-                 <span>
-                 <MdMessage className='text-2xl'/>
-                 </span>
-                </Link>
-            </div>
-         </div>
-         <FaBarsStaggered className='block  lg:hidden text-3xl active:scale-110 hover:opacity-70 cursor-pointer'/>
-
-        </div>
-        </header>
-  )
+    <Navbar className="border-b-2 z-50 sticky top-0">
+      <div className="">
+        <Link
+          to={"/"}
+          className="font-semibold text-sm md:text-base lg:text-2xl dark:text-white"
+        >
+          <span className="bg-gradient-to-r from-indigo-500 via-purple-500 bg-pink-300 px-2 py-2 rounded-lg text-white">
+            TRIP
+          </span>
+          .com
+        </Link>
+      </div>
+      <div className=" flex gap-2 md:order-2">
+        <Button className="w-12 h-10 active:outline-none" color="gray">
+          <FaMoon />
+        </Button>
+        <NavbarToggle className="h-10" />
+      </div>
+      <Navbar.Collapse>
+        <Navbar.Link active={location==='/'} as={'div'}>
+          <Link to={"/list-property"}>
+            <span>List your property</span>
+          </Link>
+        </Navbar.Link>
+        <Navbar.Link active={location==='/support'} as={'div'}>
+          <Link to={"/support"}>
+            <span>support</span>
+          </Link>
+        </Navbar.Link>
+        <Navbar.Link active={location==='/trip'} as={'div'}>
+          <Link to={"/trip"}>
+            <span className="flex items-center">
+              trips
+              <CiHeart className="text-2xl" />
+            </span>
+          </Link>
+        </Navbar.Link>
+        <Navbar.Link active={location==='/message'} as={'div'}>
+          <Link to={"/message"}>
+            <span>
+              <MdMessage className="text-2xl" />
+            </span>
+          </Link>
+        </Navbar.Link>
+      </Navbar.Collapse>
+    </Navbar>
+  );
 }
-
-export default Header

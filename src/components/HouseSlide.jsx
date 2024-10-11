@@ -21,7 +21,7 @@ export default function HouseSlide() {
     },
   };
   return (
-    <div className="w-full h-[350px]">
+    <div className="w-full h-[350px] -z-0">
       <Carousel responsive={responsive} infinite={true} arrows={true} className="-z-0">
         {apart?.map((item) => (
           <div key={item.id} className=" relative">
